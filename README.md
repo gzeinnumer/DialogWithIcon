@@ -81,6 +81,24 @@ implementation 'com.github.gzeinnumer:MyLibStyle:0.1.5'
 </LinearLayout>
 ```
 
+- `DialogIcon.java`
+```java
+public class DialogIcon extends MyLibDialog {
+
+    ...
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.dialog, container, false);
+    }
+
+    ...
+}
+```
+
+---
+
 - app
   - [DialogIcon.java](https://github.com/gzeinnumer/DialogWithIcon/blob/master/app/src/main/java/com/gzeinnumer/dialogwithicon/DialogIcon.java)
   - [MainActivity.java](https://github.com/gzeinnumer/DialogWithIcon/blob/master/app/src/main/java/com/gzeinnumer/dialogwithicon/MainActivity.java)

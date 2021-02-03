@@ -1,10 +1,10 @@
 package com.gzeinnumer.dialogwithicon;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
-import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,10 +13,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        testDummy();
+        showDialog();
     }
 
-    private void testDummy() {
+    private void showDialog() {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         Fragment previous = getSupportFragmentManager().findFragmentByTag(DialogIcon.TAG);
         if (previous != null) {

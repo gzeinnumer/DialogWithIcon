@@ -22,26 +22,6 @@ public class DialogIcon extends MyLibDialog {
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
-
-        // disable cancel
-        getDialog().setCancelable(false);
-
-        // disable dismiss dialog out side
-        getDialog().setCanceledOnTouchOutside(false);
-
-        // set dialog full screen
-//        setFullScreen(true);
-
-        // set canvas width, avaliable value 0.1 - 1.0
-//        setCanvasWidth(0.3);
-
-        // set BackButton to dismiss dialog
-        enableBackButton(false);
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.dialog, container, false);
@@ -56,8 +36,6 @@ public class DialogIcon extends MyLibDialog {
 
     private void initView(View view) {
         LinearLayout _dialogCanvas = view.findViewById(R.id.dialog_canvas);
-
-//        _dialogCanvas.setBackground(requireActivity().getResources().getDrawable(R.drawable.rounded_corner));
 
         _dialogCanvas.setOnClickListener(new View.OnClickListener() {
             @Override
