@@ -10,6 +10,8 @@ implementation 'com.github.gzeinnumer:MyLibDialogFragment:1.0.1'
 implementation 'com.github.gzeinnumer:MyLibStyle:0.1.5'
 ```
 
+ReadMore for [MyLibDialogFragment](https://github.com/gzeinnumer/MyLibDialogFragment)
+
 - `DialogIcon.java`
 ```java
 public class DialogIcon extends MyLibDialog {
